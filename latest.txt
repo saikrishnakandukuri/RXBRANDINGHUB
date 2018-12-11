@@ -56,9 +56,13 @@ command : git commit -a -m "any message "
 
 ====================================================================================================
 
-add
+If you changed 10 files but committed only 9 files
+you can reset and commit either in soft rest or amend
 
-commited .. I  want to overwrite the previous commit with 123 message
+commit : git reset --soft HEAD^ 
+this will undo your last git commit so you can do commit again
 
+commit: git commit --amend -m "any message"
+amend will commit and replace the message also
 
 

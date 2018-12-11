@@ -1,13 +1,60 @@
-sample
-do some modification
+Now I am going to write some git commands 
+==========================================================
+For User name config
+Command : git config --global user.name "firstname last name"
 
-want to do one more push 
+For user email
+Command : git config --global user.email "your-email@email.com"
 
-again
 
-please pull latest beacuase I added this 
+============================================
+to initialize any repository 
 
-I pushed and added this line
+Command : git init
+============================================
+
+to download the excisting repo from the remote repository like github / bitbucket 
+
+command: git clone url
+===========================================
+
+To check status 
+Command : git status
+==================================================
+
+For add a file form your working area to staging area
+To add one new file
+
+command : git add <file-name>
+
+To add multiple files
+
+Command: git add <file-name1> <file-name2> <file-name3>
+
+another way to add multiple files
+command: git add .
+command: git add -all
+command: git add -A
+=====================================================
+To remove any file from staging area means to do unstage
+command: git rm --cached <file-name>
+
+another way
+command: git reset <file-name>
+===========================================================================
+To commit to a repository means from staging area to local repository
+
+To commit 
+command: git commit -m "add files"
+=============================================================================
+If you add new file first add and then commit this for git to track the file
+but when do modification to an already existing file no need to add and commit
+you can do directly add and commit using 
+
+command : git commit -a -m "any message "
+=========================================================================================
+
+====================================================================================================
 
 add
 

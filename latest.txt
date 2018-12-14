@@ -59,20 +59,32 @@ command : git commit -a -m "any message "
 If you changed 10 files but committed only 9 files
 you can reset and commit either in soft rest or amend
 
-commit : git reset --soft HEAD^ 
+command : git reset --soft HEAD^ 
 this will undo your last git commit so you can do commit again
 
-commit: git commit --amend -m "any message"
+command: git commit --amend -m "any message"
 amend will commit and replace the message also
 
 ========================================================================================================
+To undo uncommitted changes
 
+command : git checkout -- . 
+or 
+command : git checkout -- <filename>
 
+==========================================================================
 
+To undo committed changes
 
+command : git revert commitId
 
+==========================================================================
 
+To resetting changes 
 
-==============
+git reset -- hard commitId
 
+========================================================================
+
+krish branch
 
